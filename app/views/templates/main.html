@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{$page_description|default:"Opis domyślny"}">
+
+    <title>{$page_title|default:"Tytuł domyślny"}</title>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="{$conf ->app_url}/assets/css/main.css" />
+      <!--  <link rel="stylesheet" href="{$conf ->app_url}/css/main-grid.css">
+   
+        <!--<![endif]-->
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="{$app_url}/css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <!--<link rel="stylesheet" href="{$conf ->app_url}/css/layouts/marketing.css">
+    <!--<![endif]-->
+
+    <!--<link rel="stylesheet" href="{$conf ->app_url}/css/style.css">
+
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        -->
+	<script src="{$app_url}/js/jquery.min.js"></script>
+	<script src="{$app_url}/js/softscroll.js"></script>
+        <style>
+            body{
+                      background-image: url("{$conf ->app_url}/images/male_kotki1.jpg");// repeating-linear-gradient(red, yellow 10%, green 20%);//url("../../images/male_kotki.jpg");
+                      background-size: cover;
+                      background-position: center;
+                     //background-color: red;
+                     
+            }
+        </style>
+
+</head>
+<body>
+
+<!--<div id="app_top" class="header">
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">{$page_title|default:"Tytuł domyślny"}</a>
+        <ul>
+            <li class="pure-menu-selected"><a href="#app_top">Góra strony</a></li>
+            <li><a href="#app_content">Idź do formularza</a></li>
+        </ul>
+    </div>
+</div>
+-->
+<section class=" style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+                        <div style="padding: 0px">                                
+    <div style="font-weight: 900; width:48%; padding: 5em 1em 8em 10em; float: left; display: inline-block;">
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">{$page_title|default:"Tytuł domyślny"}</h1>
+        
+        <p class="splash-subhead">
+             {$page_description|default:"Opis domyślny"}
+        </p>
+        <p>
+            <!--
+            <a href="#app_content" class="pure-button pure-button-primary">Idź do formularza</a>
+            -->
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+
+    <div id="app_content" class="content">
+
+{block name=content} Domyślna treść zawartości .... {/block}
+
+    </div>
+
+</div>
+    </div>
+                        </div>
+</section>
+                            
+    <div class="footer l-box is-center">
+		<p>
+{block name=footer} Domyślna treść stopki .... {/block}
+		</p>
+                <p>Kalkulator rat oparty na obiektowości.
+                </p>
+    </div>
+
+
+
+
+</body>
+</html>
